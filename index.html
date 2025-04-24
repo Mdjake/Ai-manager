@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Manager</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and container styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2C3E50;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            color: #7F8C8D;
+            margin-bottom: 40px;
+        }
+
+        /* Grid container for tools */
+        .tool-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        /* Styling for each tool card */
+        .tool {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .tool img {
+            max-width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .tool h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #2C3E50;
+            font-weight: bold;
+        }
+
+        .tool p {
+            font-size: 14px;
+            color: #7F8C8D;
+            margin-bottom: 15px;
+        }
+
+        .tool a {
+            text-decoration: none;
+            color: #3498DB;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .tool a:hover {
+            color: #2980B9;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Credit styling */
+        .credits {
+            font-size: 16px;
+            margin-top: 20px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .tool-container {
+                grid-template-columns: 1fr; /* Single column for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>AI Tools Manager</h1>
+        <p>Explore these amazing AI image generation and editing tools. Click to try them out!</p>
+
+        <div class="tool-container">
+            <!-- Tool 1 -->
+            <div class="tool">
+                <img src="https://iili.io/3McW3Eg.png">
+                <h2>AI Text-to-Image Generator</h2>
+                <p>Generate images from text descriptions using advanced AI models.</p>
+                <a href="https://perchance.org/ai-text-to-image-generator" target="_blank">Try it here</a>
+            </div>
+
+            <!-- Tool 2 -->
+            <div class="tool">
+                <img src="https://iili.io/3McXZ5x.png" alt="Magic Studio Art Generator">
+                <h2>Magic Studio AI Art Generator</h2>
+                <p>Create stunning art using AI technology.</p>
+                <a href="https://magicstudio.com/ai-art-generator/" target="_blank">Try it here</a>
+            </div>
+
+            <!-- Tool 3 -->
+            <div class="tool">
+                <img src="https://iili.io/3McjpKF.png" alt="Canva AI Image Generator">
+                <h2>Canva AI Image Generator</h2>
+                <p>Design and generate images with Canva's AI tool.</p>
+                <a href="https://www.canva.com/ai-image-generator/" target="_blank">Try it here</a>
+            </div>
+
+            <!-- Tool 4 -->
+            <div class="tool">
+                <img src="https://iili.io/3McvuGp.jpg" alt="Fotor AI Photo Editor">
+                <h2>Fotor AI Photo Editor</h2>
+                <p>Edit and enhance your photos using AI-powered tools.</p>
+                <a href="https://www.fotor.com/ai-photo-editor/" target="_blank">Try it here</a>
+            </div>
+
+            <!-- Tool 5 -->
+            <div class="tool">
+                <img src="https://iili.io/3McPPjt.png" alt="Hugging Face IC-Light">
+                <h2>Hugging Face IC-Light</h2>
+                <p>Explore image generation and enhancement models.</p>
+                <a href="https://huggingface.co/spaces/lllyasviel/iclight-v2" target="_blank">Try it here</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AI Tools Manager. All rights reserved.</p>
+        <div class="credits">
+            Created by Developer Saif ❤️
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript can be added here if necessary for future enhancements
+    </script>
+
+</body>
+
+              </html>
