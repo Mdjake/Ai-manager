@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tools Manager</title>
     <style>
-        /* Reset some default styles */
+        /* Reset and basic setup */
         * {
             margin: 0;
             padding: 0;
@@ -14,128 +14,106 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f4f8;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
             color: #333;
             padding: 20px;
         }
 
         .container {
-            width: 85%;
+            max-width: 1200px;
             margin: auto;
             text-align: center;
         }
 
         h1 {
-            font-size: 48px;
-            font-weight: 800;
-            background: linear-gradient(90deg, #007cf0, #00dfd8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: pulse 3s infinite ease-in-out;
+            font-size: 42px;
+            font-weight: bold;
             margin-bottom: 10px;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 0.85;
-                transform: scale(1.03);
-            }
-        }
-
-        .divider {
-            height: 4px;
-            width: 100px;
-            background: #00dfd8;
-            margin: 10px auto 30px auto;
-            border-radius: 5px;
+            color: #2c3e50;
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             color: #555;
             margin-bottom: 40px;
-            font-weight: 500;
-            line-height: 1.6;
         }
 
+        /* Tool Cards */
         .tool-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin-top: 30px;
         }
 
         .tool {
-            background-color: #fff;
+            background: #ffffff;
             border-radius: 16px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 25px 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .tool:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
         }
 
         .tool img {
             width: 100%;
-            height: 160px;
+            height: 180px;
             object-fit: cover;
             border-radius: 12px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .tool h2 {
             font-size: 22px;
+            color: #34495e;
             margin-bottom: 10px;
-            color: #2C3E50;
-            font-weight: bold;
         }
 
         .tool p {
-            font-size: 14px;
-            color: #7F8C8D;
+            font-size: 15px;
+            color: #7f8c8d;
             margin-bottom: 15px;
+            height: 60px;
+            overflow: hidden;
         }
 
         .tool a {
+            margin-top: auto;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
             text-decoration: none;
-            color: #3498DB;
             font-weight: bold;
-            transition: color 0.3s;
+            border-radius: 8px;
+            transition: background 0.3s;
         }
 
         .tool a:hover {
-            color: #2980B9;
+            background-color: #2980b9;
         }
 
+        /* Footer */
         footer {
             margin-top: 50px;
-            padding: 20px;
-            background-color: #2C3E50;
+            background: #2c3e50;
+            padding: 25px 0;
             color: white;
             text-align: center;
-            font-size: 14px;
+            font-size: 15px;
         }
 
         .credits {
-            font-size: 16px;
-            margin-top: 20px;
-            color: #fff;
+            margin-top: 10px;
             font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            .tool-container {
-                grid-template-columns: 1fr;
-            }
+            color: #f1f1f1;
         }
     </style>
 </head>
@@ -144,13 +122,12 @@
 
     <div class="container">
         <h1>AI Tools Manager</h1>
-        <div class="divider"></div>
-        <p>Explore powerful AI tools for image generation, editing, and creative tasks. Click on any tool below to try it out!</p>
+        <p>Explore powerful AI tools for image generation and editing. Click to try them out!</p>
 
         <div class="tool-container">
             <!-- Tool 1 -->
             <div class="tool">
-                <img src="https://iili.io/3McW3Eg.png">
+                <img src="https://iili.io/3McW3Eg.png" alt="AI Text-to-Image Generator">
                 <h2>AI Text-to-Image Generator</h2>
                 <p>Generate images from text descriptions using advanced AI models.</p>
                 <a href="https://perchance.org/ai-text-to-image-generator" target="_blank">Try it here</a>
@@ -158,9 +135,9 @@
 
             <!-- Tool 2 -->
             <div class="tool">
-                <img src="https://iili.io/3McXZ5x.png" alt="Magic Studio Art Generator">
+                <img src="https://iili.io/3McXZ5x.png" alt="Magic Studio AI Art Generator">
                 <h2>Magic Studio AI Art Generator</h2>
-                <p>Create stunning art using AI technology.</p>
+                <p>Create stunning artworks powered by AI technology.</p>
                 <a href="https://magicstudio.com/ai-art-generator/" target="_blank">Try it here</a>
             </div>
 
@@ -168,7 +145,7 @@
             <div class="tool">
                 <img src="https://iili.io/3McjpKF.png" alt="Canva AI Image Generator">
                 <h2>Canva AI Image Generator</h2>
-                <p>Design and generate images with Canva's AI tool.</p>
+                <p>Design and generate visuals effortlessly with Canva's AI.</p>
                 <a href="https://www.canva.com/ai-image-generator/" target="_blank">Try it here</a>
             </div>
 
@@ -176,7 +153,7 @@
             <div class="tool">
                 <img src="https://iili.io/3McvuGp.jpg" alt="Fotor AI Photo Editor">
                 <h2>Fotor AI Photo Editor</h2>
-                <p>Edit and enhance your photos using AI-powered tools.</p>
+                <p>Edit and enhance your photos with intelligent AI features.</p>
                 <a href="https://www.fotor.com/ai-photo-editor/" target="_blank">Try it here</a>
             </div>
 
@@ -184,7 +161,7 @@
             <div class="tool">
                 <img src="https://iili.io/3McPPjt.png" alt="Hugging Face IC-Light">
                 <h2>Hugging Face IC-Light</h2>
-                <p>Explore image generation and enhancement models.</p>
+                <p>Experiment with AI-based image generation models.</p>
                 <a href="https://huggingface.co/spaces/lllyasviel/iclight-v2" target="_blank">Try it here</a>
             </div>
 
@@ -192,15 +169,15 @@
             <div class="tool">
                 <img src="https://iili.io/3M0dR5P.webp" alt="Adobe Firefly Generative Fill">
                 <h2>Adobe Firefly Generative Fill</h2>
-                <p>Transform photos using Adobe's generative AI editing tools.</p>
+                <p>AI-powered image editing directly from Adobe Firefly tools.</p>
                 <a href="https://firefly.adobe.com/upload/inpaint?trackingid=29NMCG2V&mv=in-product" target="_blank">Try it here</a>
             </div>
 
-            <!-- Tool 7 (Remaker AI) -->
+            <!-- Tool 7: New Remaker Tool -->
             <div class="tool">
-                <img src="https://remaker.ai/favicon.ico" alt="Remaker AI">
-                <h2>Remaker AI</h2>
-                <p>AI-powered tools for face swap, enhancement, talking photos & more.</p>
+                <img src="https://remaker.ai/_next/image?url=%2Fremaker_logo.png&w=640&q=75" alt="Remaker AI Tools">
+                <h2>Remaker AI Tools</h2>
+                <p>Experience advanced background removal, image enhancement, and AI features with Remaker.</p>
                 <a href="https://remaker.ai/features/" target="_blank">Try it here</a>
             </div>
 
@@ -210,7 +187,7 @@
     <footer>
         <p>&copy; 2025 AI Tools Manager. All rights reserved.</p>
         <div class="credits">
-            Created by Developer Saif ❤️
+            Created by Developer Saif
         </div>
     </footer>
 
