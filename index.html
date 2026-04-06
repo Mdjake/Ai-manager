@@ -1,203 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Tools Manager</title>
-    <style>
-        /* Reset and basic setup */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #ece9e6, #ffffff);
-            color: #333;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            text-align: center;
-            
-        }
-
-        h1 {
-            font-size: 42px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-
-        p {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 40px;
-        }
-
-        /* Tool Cards */
-        .tool-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .tool {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 25px 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .tool:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .tool img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-bottom: 20px;
-        }
-
-        .tool h2 {
-            font-size: 22px;
-            color: #34495e;
-            margin-bottom: 10px;
-        }
-
-        .tool p {
-            font-size: 15px;
-            color: #7f8c8d;
-            margin-bottom: 15px;
-            height: 60px;
-            overflow: hidden;
-        }
-
-        .tool a {
-            margin-top: auto;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: background 0.3s;
-        }
-
-        .tool a:hover {
-            background-color: #2980b9;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 50px;
-            background: #2c3e50;
-            padding: 25px 0;
-            color: white;
-            text-align: center;
-            font-size: 15px;
-        }
-
-        .credits {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #f1f1f1;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saif AI Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="app-shell">
+    <aside class="sidebar glass-panel">
+      <div class="brand-block">
+        <p class="eyebrow">Startup-grade AI app</p>
+        <h1>Saif AI Studio</h1>
+        <p class="brand-copy">
+          Memory-powered assistant built on your Samba API with on-device storage, custom behavior tuning,
+          and a premium product-style interface.
+        </p>
+      </div>
 
-    <div class="container">
-        <h1>AI Tools Manager</h1>
-        <p>Explore powerful AI tools for image generation and editing. Click to try them out!</p>
+      <div class="identity-card">
+        <span class="chip">Identity</span>
+        <p class="identity-line"><strong>Created by Developer Saif</strong></p>
+        <p class="identity-line">Contact: <a href="https://t.me/the_only_one_romeo" target="_blank" rel="noreferrer">t.me/the_only_one_romeo</a></p>
+      </div>
 
-        <div class="tool-container">
-            <!-- Tool 1 -->
-            <div class="tool">
-                <img src="https://iili.io/3McW3Eg.png" alt="AI Text-to-Image Generator">
-                <h2>AI Text-to-Image Generator</h2>
-                <p>Generate images from text descriptions using advanced AI models.</p>
-                <a href="https://perchance.org/ai-text-to-image-generator" target="_blank">Try it here</a>
-            </div>
-
-            <!-- Tool 2 -->
-            <div class="tool">
-                <img src="https://iili.io/3McXZ5x.png" alt="Magic Studio AI Art Generator">
-                <h2>Magic Studio AI Art Generator</h2>
-                <p>Create stunning artworks powered by AI technology.</p>
-                <a href="https://magicstudio.com/ai-art-generator/" target="_blank">Try it here</a>
-            </div>
-
-            <!-- Tool 3 -->
-            <div class="tool">
-                <img src="https://iili.io/3McjpKF.png" alt="Canva AI Image Generator">
-                <h2>Canva AI Image Generator</h2>
-                <p>Design and generate visuals effortlessly with Canva's AI.</p>
-                <a href="https://www.canva.com/ai-image-generator/" target="_blank">Try it here</a>
-            </div>
-
-            <!-- Tool 4 -->
-            <div class="tool">
-                <img src="https://iili.io/3McvuGp.jpg" alt="Fotor AI Photo Editor">
-                <h2>Fotor AI Photo Editor</h2>
-                <p>Edit and enhance your photos with intelligent AI features.</p>
-                <a href="https://www.fotor.com/ai-photo-editor/" target="_blank">Try it here</a>
-            </div>
-
-            <!-- Tool 5 -->
-            <div class="tool">
-                <img src="https://iili.io/3McPPjt.png" alt="Hugging Face IC-Light">
-                <h2>Hugging Face IC-Light</h2>
-                <p>Experiment with AI-based image generation models.</p>
-                <a href="https://huggingface.co/spaces/lllyasviel/iclight-v2" target="_blank">Try it here</a>
-            </div>
-
-            <!-- Tool 6 -->
-            <div class="tool">
-                <img src="https://iili.io/3M0dR5P.webp" alt="Adobe Firefly Generative Fill">
-                <h2>Adobe Firefly Generative Fill</h2>
-                <p>AI-powered image editing directly from Adobe Firefly tools.</p>
-                <a href="https://firefly.adobe.com/upload/inpaint?trackingid=29NMCG2V&mv=in-product" target="_blank">Try it here</a>
-            </div>
-
-            <!-- Tool 7: New Remaker Tool -->
-            <div class="tool">
-                <img src="https://iili.io/3MtqBTl.png" alt="Remaker AI Tools">
-                <h2>Remaker AI Tools</h2>
-                <p>Experience advanced background removal, image enhancement, and AI features with Remaker.</p>
-                <a href="https://remaker.ai/features/" target="_blank">Try it here</a>
-            </div>
-  <!-- Tool 8: Deep face cloner-->
-            <div class="tool">
-                <img src="https://iili.io/3MtU3Kb.th.jpg" alt="DeepFace">
-                <h2>deep face</h2>
-                <p>Experience clone anyone face portrait just by his one image and a video.</p>
-                <a href="https://huggingface.co/spaces/KwaiVGI/LivePortrait" target="_blank">Try it here</a>
-            </div>
+      <section class="panel-section">
+        <div class="section-heading">
+          <h2>Memory Core</h2>
+          <span id="memoryCount" class="metric-pill">0 saved</span>
         </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 AI Tools Manager. All rights reserved.</p>
-        <div class="credits">
-            Created by Developer Saif
+        <label class="field">
+          <span>Device memory summary</span>
+          <textarea id="memorySummary" rows="5" placeholder="Store user preferences, important facts, project context, and recurring instructions here."></textarea>
+        </label>
+        <div class="inline-actions">
+          <button id="saveMemoryBtn" class="btn btn-primary">Save Memory</button>
+          <button id="clearMemoryBtn" class="btn btn-secondary">Clear</button>
         </div>
-    </footer>
+      </section>
 
+      <section class="panel-section">
+        <div class="section-heading">
+          <h2>Fine-Tune Layer</h2>
+          <span class="metric-pill">Local prompt tuning</span>
+        </div>
+        <label class="field">
+          <span>Assistant role</span>
+          <input id="assistantRole" type="text" placeholder="Example: Founder-grade AI strategist">
+        </label>
+        <label class="field">
+          <span>Response style</span>
+          <input id="responseStyle" type="text" placeholder="Example: sharp, polished, concise, persuasive">
+        </label>
+        <label class="field">
+          <span>Training notes</span>
+          <textarea id="trainingNotes" rows="6" placeholder="Add domain knowledge, house rules, tone instructions, product context, or example behavior."></textarea>
+        </label>
+        <button id="saveProfileBtn" class="btn btn-primary btn-full">Save Tuning</button>
+      </section>
+
+      <section class="panel-section">
+        <div class="section-heading">
+          <h2>Control Center</h2>
+        </div>
+        <div class="inline-actions stack-mobile">
+          <button id="exportBtn" class="btn btn-secondary">Export Profile</button>
+          <label for="importInput" class="btn btn-secondary file-btn">Import Profile</label>
+          <input id="importInput" type="file" accept=".json">
+        </div>
+      </section>
+    </aside>
+
+    <main class="main-panel">
+      <section class="hero glass-panel">
+        <div>
+          <p class="eyebrow">Advanced local-memory chat</p>
+          <h2>Ask anything, retain context, and steer behavior like a product team would.</h2>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span>API Owner</span>
+            <strong id="ownerBadge">Unknown</strong>
+          </div>
+          <div class="stat-card">
+            <span>Status</span>
+            <strong id="statusBadge">Ready</strong>
+          </div>
+          <div class="stat-card">
+            <span>Mode</span>
+            <strong>Memory + Tune</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="chat-layout">
+        <div class="chat-panel glass-panel">
+          <div class="chat-header">
+            <div>
+              <p class="eyebrow">Conversation</p>
+              <h3>Persistent AI Session</h3>
+            </div>
+            <button id="clearChatBtn" class="btn btn-secondary">Reset Chat</button>
+          </div>
+
+          <div id="chatMessages" class="chat-messages"></div>
+
+          <form id="chatForm" class="composer">
+            <label class="field">
+              <span>Your prompt</span>
+              <textarea id="promptInput" rows="4" placeholder="Ask a question, brainstorm, generate content, or use your saved memory and training profile."></textarea>
+            </label>
+            <div class="composer-actions">
+              <label class="toggle">
+                <input id="memoryToggle" type="checkbox" checked>
+                <span>Inject local memory</span>
+              </label>
+              <label class="toggle">
+                <input id="historyToggle" type="checkbox" checked>
+                <span>Inject recent chat</span>
+              </label>
+              <button type="submit" class="btn btn-primary">Send to AI</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="insight-panel glass-panel">
+          <div class="chat-header">
+            <div>
+              <p class="eyebrow">Prompt Stack</p>
+              <h3>Live Context Preview</h3>
+            </div>
+          </div>
+          <div id="contextPreview" class="context-preview"></div>
+          <div class="tip-box">
+            <strong>How fine-tuning works here</strong>
+            <p>
+              This app simulates product-grade tuning by layering identity, memory, training notes, and recent chat
+              into every request. It is not server-side model retraining, but it creates a strong personalized behavior layer.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <template id="messageTemplate">
+    <article class="message">
+      <div class="message-meta">
+        <span class="role-tag"></span>
+        <span class="timestamp"></span>
+      </div>
+      <div class="message-body"></div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
 </body>
-
 </html>
